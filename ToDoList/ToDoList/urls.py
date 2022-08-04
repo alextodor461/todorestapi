@@ -9,5 +9,5 @@ router.register(r'todos', ToDoViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
-    #path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    path('', include('rest_framework.urls', namespace='rest_framework'))
 ]
