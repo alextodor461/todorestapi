@@ -13,4 +13,4 @@ class ToDoViewSet(viewsets.ModelViewSet):
     """
     queryset = ToDo.objects.all().order_by('-created_at')
     serializer_class = ToDoSerializer
-    permission_classes = [] #permissions.IsAuthenticated
+    #permission_classes = [] #permissions.IsAuthenticated
